@@ -365,13 +365,14 @@ header.black-bg{
 
 @media screen and (max-width: 1080px) {
 
+    .movie-item :nth-child(1){
+        height: 6rem;
+    }
+
     .menu-items-footer{
         padding-left: 25px;
     }
 
-    .banner-section{
-        min-height: 70vh;
-    }
     .main-nav{
         display: none;
     }
