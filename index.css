@@ -342,10 +342,7 @@ header.black-bg{
 /* RESPONSIVE CSS */
 
 @media screen and (max-width: 1080px) {
-
-    .banner-section{
-        min-height: 70vh;
-    }
+    
     .main-nav{
         display: none;
     }
