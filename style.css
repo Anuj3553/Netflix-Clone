@@ -1,4 +1,5 @@
 /* Normalise css */
+
 html,body{
     background-color: #141414;
     padding:0;
@@ -125,6 +126,11 @@ header.black-bg{
     border-radius: 4px;
     position: relative;
 }
+
+.movie-item :nth-child(1){
+    height: 12rem;
+}
+
 .move-item-img{
     width: inherit;
 }
@@ -143,11 +149,12 @@ header.black-bg{
 }
 .movie-item:hover .iframe-wrap{
     display: block;
+    cursor: pointer;
 }
 .movie-item:hover{
     transform: scale(1.1);
+    cursor: pointer;
     z-index: 1;
-    /* position: absolute; */
     transition: all 0.6s ease 0s;
 }
 
@@ -266,7 +273,6 @@ header.black-bg{
 .menu-items-footer{
     list-style: none;
     display: flex;
-    padding-left: 25px;
     justify-content: center;
     align-items: center;
 }
@@ -351,13 +357,17 @@ header.black-bg{
 }
 
 .get-store:hover{
-    border: 0.01px solid red;
+    outline: 2px solid  red;
 }
 
 
 /* RESPONSIVE CSS */
 
 @media screen and (max-width: 1080px) {
+
+    .menu-items-footer{
+        padding-left: 25px;
+    }
 
     .banner-section{
         min-height: 70vh;
@@ -427,6 +437,9 @@ header.black-bg{
     .menu-items-footer{
         flex-direction: column;
     }
+    .right-cont img {
+        max-width: 30px;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -436,10 +449,8 @@ header.black-bg{
     .footer-items{
         margin: 0 10px;
     }
+
     .menu-items-footer{
         padding: 0;
-    }
-    .right-cont img {
-        max-width: 32px;
     }
 }
