@@ -250,13 +250,25 @@ header.black-bg{
 
 /* Left Section */
 
+.brand-logo{
+    display: flex;
+    position: relative;
+    bottom: 20px;
+    justify-content: center;
+} 
+.brand-logo img{
+    width: 10rem;
+}
 .left-section-footer{
     width: 35%;
 }
 
 .menu-items-footer{
-    display: flex;
     list-style: none;
+    display: flex;
+    padding-left: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-items{
@@ -274,6 +286,10 @@ header.black-bg{
 .footer-link{
     text-decoration: none;
     color: red;
+}
+
+.desc-footer{
+    text-align: center;
 }
 
 /* Center Section */
@@ -377,7 +393,7 @@ header.black-bg{
         flex-direction: column;
     }
     .footer-items{
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
@@ -419,5 +435,11 @@ header.black-bg{
     }
     .footer-items{
         margin: 0 10px;
+    }
+    .menu-items-footer{
+        padding: 0;
+    }
+    .right-cont img {
+        max-width: 32px;
     }
 }
